@@ -84,6 +84,19 @@ export default async function Page() {
   return (
     <div className="container mx-auto px-5">
       <Intro title={settings?.title} description={settings?.description} />
+
+      <nav className="my-8">
+        <Link href="/blog/about" className="mr-4 text-blue-500 hover:underline">
+          About Us
+        </Link>
+        <Link
+          href="/blog/commentsec"
+          className="text-blue-500 hover:underline"
+        >
+          Comment Section
+        </Link>
+      </nav>
+
       {heroPost ? (
         <HeroPost
           title={heroPost.title}
