@@ -68,6 +68,18 @@ export default async function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} bg-white text-black`}>
       <body>
+        <header className="bg-accent-1 border-accent-2 border-b">
+          <div className="container mx-auto px-5">
+            <nav className="flex items-center justify-between py-4">
+              <Link href="/"
+                className="font-bold text-2xl">My Blog
+              </Link>
+              <Link href="/about"
+                 className="font-bold">About
+              </Link>
+              </nav>
+            </div>
+          </header>
         <section className="min-h-screen">
           <AlertBanner />
           <main>{children}</main>
